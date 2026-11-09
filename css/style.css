@@ -258,6 +258,7 @@ hr { border: 0; border-top: 1px solid var(--linje); margin: 2.5rem 0; }
     object-fit: cover;
     border-radius: var(--radie);
 }
+.bild-ram--bred img { aspect-ratio: 21 / 9; object-position: 50% 60%; }
 .bild-ram figcaption {
     font-size: 0.9rem;
     color: var(--rok);
@@ -499,6 +500,10 @@ hr { border: 0; border-top: 1px solid var(--linje); margin: 2.5rem 0; }
     object-fit: cover;
     object-position: 62% 50%;
 }
+/* Heron: gänget på flaket ska synas ovanför loggan. I mobilen börjar
+   innehållet längre ner så att bilden får plats överst. */
+.hero-bild img { object-position: 44% 30%; }
+.hero { padding-top: 34svh; }
 .hero::after,
 .sidtopp::after {
     content: '';
@@ -506,7 +511,7 @@ hr { border: 0; border-top: 1px solid var(--linje); margin: 2.5rem 0; }
     inset: 0;
     z-index: -1;
     background:
-        linear-gradient(180deg, rgba(10, 10, 10, 0.35) 0%, rgba(10, 10, 10, 0.55) 45%, rgba(10, 10, 10, 0.94) 100%);
+        linear-gradient(180deg, rgba(10, 10, 10, 0.25) 0%, rgba(10, 10, 10, 0.5) 45%, rgba(10, 10, 10, 0.94) 100%);
 }
 
 .hero-innehall {
@@ -539,9 +544,28 @@ hr { border: 0; border-top: 1px solid var(--linje); margin: 2.5rem 0; }
 
 .hero .knapprad { justify-content: center; margin-top: 0.5rem; }
 
+/* Dator: loggan, datumet och nedräkningen i ett band längst ner, så att
+   bilden syns ovanför (samma upplägg som delningsbilden). */
 @media (min-width: 900px) {
-    .hero { padding-bottom: 4rem; }
-    .hero-bild img { object-position: 50% 55%; }
+    .hero { padding: 8rem 0 3.5rem; min-height: min(100svh - 7rem, 54rem); }
+    .hero-bild img { object-position: 50% 100%; }
+    .hero::after {
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.12) 0%, rgba(10, 10, 10, 0.2) 45%, rgba(10, 10, 10, 0.88) 78%, rgba(10, 10, 10, 0.96) 100%);
+    }
+    .hero-innehall {
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logga nedrakning" "datum knappar";
+        align-items: end;
+        justify-items: start;
+        text-align: left;
+        gap: 0.75rem 3rem;
+    }
+    .hero-logga { grid-area: logga; }
+    .hero-logga img { width: min(27rem, 34vw); }
+    .hero-datum { grid-area: datum; font-size: clamp(1rem, 1.6vw, 1.35rem); }
+    .hero .nedrakning { grid-area: nedrakning; justify-items: end; }
+    .hero .nedrakning-siffror { width: 22rem; }
+    .hero .knapprad { grid-area: knappar; justify-content: flex-end; margin-top: 0; }
 }
 
 /* Topp på undersidor */

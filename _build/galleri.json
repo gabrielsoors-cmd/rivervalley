@@ -3,27 +3,193 @@
     {
       "id": "2026",
       "rubrik": "River Valley 2026",
-      "text": "Femte upplagan, 25–27 juni 2026, och nytt publikrekord med drygt 2 600 besökare. Kör, rodéo, marknadsgata och kvällssol över Boggberget.",
+      "text": "Femte upplagan, 25–27 juni 2026, och nytt publikrekord med drygt 2 600 besökare. Traktorskjuts, rodéo, kör, fullsatt inomhus och kvällssol över Boggberget.",
       "bilder": [
-        {"namn": "rv-2026-marknadsgatan", "kalla": "4214b7e7-image.jpg", "alt": "Marknadsgatan med pop up-butiker framför den röda ladan på Boggberget"},
-        {"namn": "rv-2026-hattbutiken", "kalla": "9ef60cdb-image.jpg", "alt": "Pop up-butik med staplade cowboyhattar och broderade boots"},
-        {"namn": "rv-2026-vagnshjul", "kalla": "19610410-image.jpg", "alt": "Två gamla vagnshjul, en höbal och en glasflaska i trälåda"},
-        {"namn": "rv-2026-rodeo", "kalla": "635bbc0f-image.jpg", "alt": "Cowboy håller sig kvar på den mekaniska tjuren under rodéo-skylten"},
-        {"namn": "rv-2026-publik-i-solen", "kalla": "823900d6-image.jpg", "alt": "Publik i hattar och boots står i solen och lyssnar"},
-        {"namn": "rv-2026-countrykoren", "kalla": "ec453d4f-image.jpg", "alt": "River Valley Countrykör sjunger på scenen framför den röda ladväggen"},
-        {"namn": "rv-2026-ak-and-the-brotherhood", "kalla": "fad44d21-image.jpg", "alt": "A.K & The Brotherhood spelar för publiken framför scenladan"},
-        {"namn": "rv-2026-applad-i-kvallssolen", "kalla": "513d4e36-image.jpg", "alt": "Sittande publik i backen applåderar i kvällssolen"},
-        {"namn": "rv-2026-skratt-i-publiken", "kalla": "a2be1385-image.jpg", "alt": "Man i svart cowboyhatt och kvinna i halmhatt skrattar mot varandra"},
-        {"namn": "rv-2026-skrattande-par", "kalla": "967d96c6-image.jpg", "alt": "Par i solglasögon och cowboyhattar skrattar stort"},
-        {"namn": "rv-2026-armarna-ut", "kalla": "de390916-image.jpg", "alt": "Glad kvinna i läderhatt sträcker ut armarna mot kameran"},
-        {"namn": "rv-2026-fyra-vaninnor", "kalla": "497e3c37-image.jpg", "alt": "Fyra väninnor i vita spetsblusar och hattar med bergen bakom sig"},
-        {"namn": "rv-2026-stjarnhatten", "kalla": "375d6f95-image.jpg", "alt": "Två kvinnor i cowboyhattar, den ena med glittriga stjärnor på brättet"},
-        {"namn": "rv-2026-vaninnor-i-skymningen", "kalla": "53742631-image.jpg", "alt": "Två leende väninnor i svart och brun cowboyhatt i skymningen"},
-        {"namn": "rv-2026-under-parasollet", "kalla": "eaf729ac-image.jpg", "alt": "Gäng i cowboyhattar vid borden under ett vitt fransparasoll"},
-        {"namn": "rv-2026-rocktecken-pa-campingen", "kalla": "09b38ea8-image.jpg", "alt": "Man i broderad westernskjorta gör rocktecken mellan husbilarna på campingen"},
-        {"namn": "rv-2026-mot-utsikten", "kalla": "1c061541-image.jpg", "alt": "Två kvinnor i hattar går mot utsikten, förbi en rostig pickup"},
-        {"namn": "rv-2026-baren-i-solnedgangen", "kalla": "c6ccc8f0-image.jpg", "alt": "Baren lyser i solnedgången under ljusslingor och tygvimplar"},
-        {"namn": "rv-2026-handerna-i-luften", "kalla": "cccca14f-image.jpg", "alt": "Händerna i luften under ljusslingorna i skymningen"}
+        {
+          "namn": "rv-2026-traktorn-med-flaket",
+          "kalla": "02726ca7-image.jpg",
+          "alt": "Festivalbesökare på flaket bakom en gammal traktor, en av dem höjer glaset mot kameran"
+        },
+        {
+          "namn": "rv-2026-traktorn-pa-vagen",
+          "kalla": "0e676352-image.jpg",
+          "alt": "Traktorn med flakvagn rullar uppför vägen förbi en röd Chevrolet-pickup"
+        },
+        {
+          "namn": "rv-2026-skal",
+          "kalla": "41d8cbfd-image.jpg",
+          "alt": "Man i svart cowboyhatt och rutig westernskjorta höjer glaset mot kvällshimlen"
+        },
+        {
+          "namn": "rv-2026-marknadsgatan",
+          "kalla": "4214b7e7-image.jpg",
+          "alt": "Marknadsgatan med pop up-butiker framför den röda ladan på Boggberget"
+        },
+        {
+          "namn": "rv-2026-hattbutiken",
+          "kalla": "9ef60cdb-image.jpg",
+          "alt": "Pop up-butik med staplade cowboyhattar och broderade boots"
+        },
+        {
+          "namn": "rv-2026-vagnshjul",
+          "kalla": "19610410-image.jpg",
+          "alt": "Två gamla vagnshjul, en höbal och en glasflaska i trälåda"
+        },
+        {
+          "namn": "rv-2026-rodeo",
+          "kalla": "635bbc0f-image.jpg",
+          "alt": "Cowboy håller sig kvar på den mekaniska tjuren under rodéo-skylten"
+        },
+        {
+          "namn": "rv-2026-the-swedish-cowboy",
+          "kalla": "f86f3967-image.jpg",
+          "alt": "The Swedish Cowboy på stora scenen framför den röda ladan, sedd mellan två cowboyhattar"
+        },
+        {
+          "namn": "rv-2026-caitlin-palm",
+          "kalla": "454741c6-image.jpg",
+          "alt": "Caitlin Palm med band på stora scenen framför den röda ladan, armen i luften"
+        },
+        {
+          "namn": "rv-2026-caitlin-palm-sjunger",
+          "kalla": "1ab6f773-image.jpg",
+          "alt": "Caitlin Palm sjunger och sträcker ut armen mot publiken"
+        },
+        {
+          "namn": "rv-2026-countrykoren",
+          "kalla": "ec453d4f-image.jpg",
+          "alt": "River Valley Countrykör sjunger på scenen framför den röda ladväggen"
+        },
+        {
+          "namn": "rv-2026-ak-and-the-brotherhood",
+          "kalla": "fad44d21-image.jpg",
+          "alt": "A.K & The Brotherhood spelar för publiken framför scenladan"
+        },
+        {
+          "namn": "rv-2026-gitarristen",
+          "kalla": "ff46d22b-image.jpg",
+          "alt": "Gitarrist i keps och jeansskjorta spelar på scenen"
+        },
+        {
+          "namn": "rv-2026-publik-i-solen",
+          "kalla": "823900d6-image.jpg",
+          "alt": "Publik i hattar och boots står i solen och lyssnar"
+        },
+        {
+          "namn": "rv-2026-applad-i-kvallssolen",
+          "kalla": "513d4e36-image.jpg",
+          "alt": "Sittande publik i backen applåderar i kvällssolen"
+        },
+        {
+          "namn": "rv-2026-skratt-i-publiken",
+          "kalla": "a2be1385-image.jpg",
+          "alt": "Man i svart cowboyhatt och kvinna i halmhatt skrattar mot varandra"
+        },
+        {
+          "namn": "rv-2026-skrattande-par",
+          "kalla": "967d96c6-image.jpg",
+          "alt": "Par i solglasögon och cowboyhattar skrattar stort"
+        },
+        {
+          "namn": "rv-2026-armarna-ut",
+          "kalla": "de390916-image.jpg",
+          "alt": "Glad kvinna i läderhatt sträcker ut armarna mot kameran"
+        },
+        {
+          "namn": "rv-2026-fyra-vaninnor",
+          "kalla": "497e3c37-image.jpg",
+          "alt": "Fyra väninnor i vita spetsblusar och hattar med bergen bakom sig"
+        },
+        {
+          "namn": "rv-2026-stjarnhatten",
+          "kalla": "375d6f95-image.jpg",
+          "alt": "Två kvinnor i cowboyhattar, den ena med glittriga stjärnor på brättet"
+        },
+        {
+          "namn": "rv-2026-under-parasollet",
+          "kalla": "eaf729ac-image.jpg",
+          "alt": "Gäng i cowboyhattar vid borden under ett vitt fransparasoll"
+        },
+        {
+          "namn": "rv-2026-rokrutan",
+          "kalla": "72336b81-image.jpg",
+          "alt": "Handmålad skylt med texten Rökruta, folk i hattar minglar bland bilar och husvagnar"
+        },
+        {
+          "namn": "rv-2026-rocktecken-pa-campingen",
+          "kalla": "09b38ea8-image.jpg",
+          "alt": "Man i broderad westernskjorta gör rocktecken mellan husbilarna på campingen"
+        },
+        {
+          "namn": "rv-2026-mot-utsikten",
+          "kalla": "1c061541-image.jpg",
+          "alt": "Två kvinnor i hattar går mot utsikten, förbi en rostig pickup"
+        },
+        {
+          "namn": "rv-2026-kaket",
+          "kalla": "496b942e-image.jpg",
+          "alt": "Rivet kött läggs upp i en skål med grilltång"
+        },
+        {
+          "namn": "rv-2026-solnedgang-over-baren",
+          "kalla": "9646f3ff-image.jpg",
+          "alt": "Rosa solnedgång över festivalområdet, med ljusslingor, tygvimplar och folk vid baren"
+        },
+        {
+          "namn": "rv-2026-mingel-i-solnedgangen",
+          "kalla": "ff7a1eca-image.jpg",
+          "alt": "Besökare i hattar äter och minglar under ljusslingorna medan solen går ner"
+        },
+        {
+          "namn": "rv-2026-mingel-i-skymningen",
+          "kalla": "8ffc5918-image.jpg",
+          "alt": "Mingel i skymningen bland tunnor och ljusslingor"
+        },
+        {
+          "namn": "rv-2026-baren-i-solnedgangen",
+          "kalla": "c6ccc8f0-image.jpg",
+          "alt": "Baren lyser i solnedgången under ljusslingor och tygvimplar"
+        },
+        {
+          "namn": "rv-2026-vaninnor-i-skymningen",
+          "kalla": "53742631-image.jpg",
+          "alt": "Två leende väninnor i svart och brun cowboyhatt i skymningen"
+        },
+        {
+          "namn": "rv-2026-honeywood-sisters",
+          "kalla": "d6ad8983-image.jpg",
+          "alt": "Honeywood Sisters på scen inomhus, två i publiken kramas vid borden"
+        },
+        {
+          "namn": "rv-2026-honeywood-sisters-inomhus",
+          "kalla": "cc6dfe57-image.jpg",
+          "alt": "Honeywood Sisters spelar inomhus under träpaneltaket, levande ljus på borden"
+        },
+        {
+          "namn": "rv-2026-fullt-inomhus",
+          "kalla": "995e6f6b-image.jpg",
+          "alt": "Fullt inne i lokalen, genom dörren syns ljusslingorna och festen ute"
+        },
+        {
+          "namn": "rv-2026-baren-inomhus",
+          "kalla": "36738a3a-image.jpg",
+          "alt": "Folk i cowboyhattar vid baren inomhus, under vimplar och färgglada ljusslingor"
+        },
+        {
+          "namn": "rv-2026-stonefish",
+          "kalla": "9d138326-image.jpg",
+          "alt": "Stonefish spelar framför sin banderoll med fisken, publiken i siluett"
+        },
+        {
+          "namn": "rv-2026-stonefish-stralkastare",
+          "kalla": "30629b43-image.jpg",
+          "alt": "Stonefish i orange strålkastarljus, hattarna i publiken lyser i motljus"
+        },
+        {
+          "namn": "rv-2026-handerna-i-luften",
+          "kalla": "cccca14f-image.jpg",
+          "alt": "Händerna i luften under ljusslingorna i skymningen"
+        }
       ]
     },
     {
@@ -31,54 +197,246 @@
       "rubrik": "River Valley 2024",
       "text": "Tredje upplagan och första publikrekordet, med bland andra Maja Francis, Doug Seegers och The Swedish Cowboy på scen.",
       "bilder": [
-        {"namn": "rv-2024-vagskylt", "kalla": "RVCFwebb-3.jpg", "alt": "Handmålad skylt som pekar mot stora scen, rodeo, tattoolada, saloonen och publadan"},
-        {"namn": "rv-2024-camping-husvagnar", "kalla": "RVCFwebb-1.jpg", "alt": "Husvagnar och förtält på festivalcampingen"},
-        {"namn": "rv-2024-chevrolet", "kalla": "RVCFwebb-260.jpg", "alt": "Grön Chevrolet-pickup parkerad på festivalområdet"},
-        {"namn": "rv-2024-mopeder", "kalla": "RVCFwebb-254.jpg", "alt": "Rad med gamla mopeder parkerade på gräset"},
-        {"namn": "rv-2024-scenladan-och-bergen", "kalla": "RVCFwebb-103.jpg", "alt": "Folk samlas framför den röda scenladan med bergen i bakgrunden"},
-        {"namn": "rv-2024-langborden", "kalla": "RVCFwebb-144.jpg", "alt": "Långbord fulla med folk och scenladan längst bort"},
-        {"namn": "rv-2024-tre-vanner", "kalla": "RVCFwebb-46.jpg", "alt": "Tre vänner i cowboyhattar och flanell skrattar i backen"},
-        {"namn": "rv-2024-par-rod-sjalett", "kalla": "RVCFwebb-95.jpg", "alt": "Leende par, hon i vit hatt och röd sjalett, han i rutig skjorta"},
-        {"namn": "rv-2024-tva-hattar", "kalla": "RVCFwebb-106.jpg", "alt": "Två kvinnor, en i svart hatt och en i halmhatt, ler mot kameran"},
-        {"namn": "rv-2024-fyra-vanner", "kalla": "RVCFwebb-136.jpg", "alt": "Fyra vänner i hattar och jeansjackor poserar framför scenen"},
-        {"namn": "rv-2024-segertecken", "kalla": "RVCFwebb-138.jpg", "alt": "Kvinna i keps gör segertecken och skrattar"},
-        {"namn": "rv-2024-vinkar", "kalla": "RVCFwebb-151.jpg", "alt": "Två väninnor i cowboyhattar vinkar och skrattar"},
-        {"namn": "rv-2024-hund-i-hatt", "kalla": "RVCFwebb-86.jpg", "alt": "Golden retriever i cowboyhatt sitter framför sin matte vid borden"},
-        {"namn": "rv-2024-hundpromenad", "kalla": "RVCFwebb-23.jpg", "alt": "Kvinna i lång vit kjol går med två små vita hundar över området"},
-        {"namn": "rv-2024-linedance-under-taket", "kalla": "RVCFwebb-9.jpg", "alt": "Linedance under taket, ett tiotal personer i takt"},
-        {"namn": "rv-2024-dans-framfor-scenen", "kalla": "RVCFwebb-157.jpg", "alt": "Två kvinnor dansar framför scenen"},
-        {"namn": "rv-2024-rodeo-avkastad", "kalla": "RVCFwebb-117.jpg", "alt": "Ryttare kastas av den mekaniska tjuren i rodéon"},
-        {"namn": "rv-2024-rodeo-ritt", "kalla": "RVCFwebb-124.jpg", "alt": "Kvinna i jeansjacka håller sig kvar på den mekaniska tjuren"},
-        {"namn": "rv-2024-trillar", "kalla": "RVCFwebb-214.jpg", "alt": "Man trillar baklänges över en bänk medan vännerna skrattar"},
-        {"namn": "rv-2024-tattooladan", "kalla": "RVCFwebb-72.jpg", "alt": "Tattooladan med skylten Tattoo Drop In och texten Welcome stranger"},
-        {"namn": "rv-2024-skissar", "kalla": "RVCFwebb-54.jpg", "alt": "Man i svart cowboyhatt och tatuerade armar skissar vid ett bord"},
-        {"namn": "rv-2024-stjarnboots", "kalla": "RVCFwebb-56.jpg", "alt": "Cowboyboots i stjärnbaneret"},
-        {"namn": "rv-2024-baren", "kalla": "RVCFwebb-32.jpg", "alt": "Besökare i cowboyhatt hänger vid baren under Mora Bryggeris banderoll"},
-        {"namn": "rv-2024-foodtruck", "kalla": "RVCFwebb-33.jpg", "alt": "Kö vid en foodtruck med handskriven meny"},
-        {"namn": "rv-2024-nachos", "kalla": "RVCFwebb-37.jpg", "alt": "Nachos med salsa i en pappersbricka"},
-        {"namn": "rv-2024-vid-bordet", "kalla": "RVCFwebb-83.jpg", "alt": "Gäng i hattar runt ett picknickbord"},
-        {"namn": "rv-2024-vid-staketet", "kalla": "RVCFwebb-140.jpg", "alt": "Fyra killar med öl lutar sig mot det röda staketet"},
-        {"namn": "rv-2024-grillplatsen", "kalla": "RVCFwebb-108.jpg", "alt": "Det ryker från grillplatsen vid vindskyddet på campingområdet"},
-        {"namn": "rv-2024-festivalvard", "kalla": "RVCFwebb-109.jpg", "alt": "Festivalvärd i väst och hatt pratar med en besökare"},
-        {"namn": "rv-2024-maja-francis", "kalla": "RVCFwebb-146.jpg", "alt": "Maja Francis och band på stora scenen"},
-        {"namn": "rv-2024-maja-francis-sjunger", "kalla": "RVCFwebb-200.jpg", "alt": "Maja Francis sjunger med akustisk gitarr"},
-        {"namn": "rv-2024-the-swedish-cowboy", "kalla": "RVCFwebb-131.jpg", "alt": "The Swedish Cowboy spelar på stora scenen"},
-        {"namn": "rv-2024-doug-seegers", "kalla": "RVCFwebb-273.jpg", "alt": "Doug Seegers och band på stora scenen"},
-        {"namn": "rv-2024-kontrabas", "kalla": "RVCFwebb-255.jpg", "alt": "Band med kontrabas och banjo på stora scenen"},
-        {"namn": "rv-2024-duo-pa-scenen", "kalla": "RVCFwebb-21.jpg", "alt": "Duo på scenen, gitarrist i gul skjorta och kvinna vid keyboard"},
-        {"namn": "rv-2024-band-skogsbild", "kalla": "RVCFwebb-66.jpg", "alt": "Otis Kerp på scenen 2024, publik i hattar framför"},
-        {"namn": "rv-2024-fiol", "kalla": "RVCFwebb-243.jpg", "alt": "Fiolspelare i svart cowboyhatt"},
-        {"namn": "rv-2024-full-framfor-scenen", "kalla": "RVCFwebb-178.jpg", "alt": "Fullt framför scenen under en kvällskonsert"},
-        {"namn": "rv-2024-publik-i-graset", "kalla": "RVCFwebb-148.jpg", "alt": "Publik sitter i gräset och lyssnar"},
-        {"namn": "rv-2024-publik-med-filtar", "kalla": "RVCFwebb-96.jpg", "alt": "Publik med filtar sitter längs staketet framför scenen"},
-        {"namn": "rv-2024-publadan", "kalla": "RVCFwebb-221.jpg", "alt": "Fullt ös inne i ladan under rött scenljus"},
-        {"namn": "rv-2024-sjunger-med", "kalla": "RVCFwebb-227.jpg", "alt": "Publiken sjunger med inne i ladan"},
-        {"namn": "rv-2024-bla-hatten", "kalla": "RVCFwebb-225.jpg", "alt": "Skrattande man i blå cowboyhatt mitt i publiken"},
-        {"namn": "rv-2024-siluett-solnedgang", "kalla": "RVCFwebb-143.jpg", "alt": "Siluett av en artist mot en röd kvällshimmel"},
-        {"namn": "rv-2024-siluett-over-dalen", "kalla": "RVCFwebb-89.jpg", "alt": "Siluett av en cowboyhatt mot dalen och bergen"},
-        {"namn": "rv-2024-utsikten", "kalla": "RVCFwebb-101.jpg", "alt": "Par med armarna om varandra blickar ut över dalen"},
-        {"namn": "rv-2024-solnedgang", "kalla": "RVCFwebb-237.jpg", "alt": "Siluett av kvinna i cowboyhatt mot en brinnande solnedgång"},
-        {"namn": "rv-2024-lagereld", "kalla": "RVCFwebb-239.jpg", "alt": "Lägereld på campingen sent på kvällen"}
+        {
+          "namn": "rv-2024-vagskylt",
+          "kalla": "RVCFwebb-3.jpg",
+          "alt": "Handmålad skylt som pekar mot stora scen, rodeo, tattoolada, saloonen och publadan"
+        },
+        {
+          "namn": "rv-2024-camping-husvagnar",
+          "kalla": "RVCFwebb-1.jpg",
+          "alt": "Husvagnar och förtält på festivalcampingen"
+        },
+        {
+          "namn": "rv-2024-chevrolet",
+          "kalla": "RVCFwebb-260.jpg",
+          "alt": "Grön Chevrolet-pickup parkerad på festivalområdet"
+        },
+        {
+          "namn": "rv-2024-mopeder",
+          "kalla": "RVCFwebb-254.jpg",
+          "alt": "Rad med gamla mopeder parkerade på gräset"
+        },
+        {
+          "namn": "rv-2024-scenladan-och-bergen",
+          "kalla": "RVCFwebb-103.jpg",
+          "alt": "Folk samlas framför den röda scenladan med bergen i bakgrunden"
+        },
+        {
+          "namn": "rv-2024-langborden",
+          "kalla": "RVCFwebb-144.jpg",
+          "alt": "Långbord fulla med folk och scenladan längst bort"
+        },
+        {
+          "namn": "rv-2024-tre-vanner",
+          "kalla": "RVCFwebb-46.jpg",
+          "alt": "Tre vänner i cowboyhattar och flanell skrattar i backen"
+        },
+        {
+          "namn": "rv-2024-par-rod-sjalett",
+          "kalla": "RVCFwebb-95.jpg",
+          "alt": "Leende par, hon i vit hatt och röd sjalett, han i rutig skjorta"
+        },
+        {
+          "namn": "rv-2024-tva-hattar",
+          "kalla": "RVCFwebb-106.jpg",
+          "alt": "Två kvinnor, en i svart hatt och en i halmhatt, ler mot kameran"
+        },
+        {
+          "namn": "rv-2024-fyra-vanner",
+          "kalla": "RVCFwebb-136.jpg",
+          "alt": "Fyra vänner i hattar och jeansjackor poserar framför scenen"
+        },
+        {
+          "namn": "rv-2024-segertecken",
+          "kalla": "RVCFwebb-138.jpg",
+          "alt": "Kvinna i keps gör segertecken och skrattar"
+        },
+        {
+          "namn": "rv-2024-vinkar",
+          "kalla": "RVCFwebb-151.jpg",
+          "alt": "Två väninnor i cowboyhattar vinkar och skrattar"
+        },
+        {
+          "namn": "rv-2024-hund-i-hatt",
+          "kalla": "RVCFwebb-86.jpg",
+          "alt": "Golden retriever i cowboyhatt sitter framför sin matte vid borden"
+        },
+        {
+          "namn": "rv-2024-hundpromenad",
+          "kalla": "RVCFwebb-23.jpg",
+          "alt": "Kvinna i lång vit kjol går med två små vita hundar över området"
+        },
+        {
+          "namn": "rv-2024-linedance-under-taket",
+          "kalla": "RVCFwebb-9.jpg",
+          "alt": "Linedance under taket, ett tiotal personer i takt"
+        },
+        {
+          "namn": "rv-2024-dans-framfor-scenen",
+          "kalla": "RVCFwebb-157.jpg",
+          "alt": "Två kvinnor dansar framför scenen"
+        },
+        {
+          "namn": "rv-2024-rodeo-avkastad",
+          "kalla": "RVCFwebb-117.jpg",
+          "alt": "Ryttare kastas av den mekaniska tjuren i rodéon"
+        },
+        {
+          "namn": "rv-2024-rodeo-ritt",
+          "kalla": "RVCFwebb-124.jpg",
+          "alt": "Kvinna i jeansjacka håller sig kvar på den mekaniska tjuren"
+        },
+        {
+          "namn": "rv-2024-trillar",
+          "kalla": "RVCFwebb-214.jpg",
+          "alt": "Man trillar baklänges över en bänk medan vännerna skrattar"
+        },
+        {
+          "namn": "rv-2024-tattooladan",
+          "kalla": "RVCFwebb-72.jpg",
+          "alt": "Tattooladan med skylten Tattoo Drop In och texten Welcome stranger"
+        },
+        {
+          "namn": "rv-2024-skissar",
+          "kalla": "RVCFwebb-54.jpg",
+          "alt": "Man i svart cowboyhatt och tatuerade armar skissar vid ett bord"
+        },
+        {
+          "namn": "rv-2024-stjarnboots",
+          "kalla": "RVCFwebb-56.jpg",
+          "alt": "Cowboyboots i stjärnbaneret"
+        },
+        {
+          "namn": "rv-2024-baren",
+          "kalla": "RVCFwebb-32.jpg",
+          "alt": "Besökare i cowboyhatt hänger vid baren under Mora Bryggeris banderoll"
+        },
+        {
+          "namn": "rv-2024-foodtruck",
+          "kalla": "RVCFwebb-33.jpg",
+          "alt": "Kö vid en foodtruck med handskriven meny"
+        },
+        {
+          "namn": "rv-2024-nachos",
+          "kalla": "RVCFwebb-37.jpg",
+          "alt": "Nachos med salsa i en pappersbricka"
+        },
+        {
+          "namn": "rv-2024-vid-bordet",
+          "kalla": "RVCFwebb-83.jpg",
+          "alt": "Gäng i hattar runt ett picknickbord"
+        },
+        {
+          "namn": "rv-2024-vid-staketet",
+          "kalla": "RVCFwebb-140.jpg",
+          "alt": "Fyra killar med öl lutar sig mot det röda staketet"
+        },
+        {
+          "namn": "rv-2024-grillplatsen",
+          "kalla": "RVCFwebb-108.jpg",
+          "alt": "Det ryker från grillplatsen vid vindskyddet på campingområdet"
+        },
+        {
+          "namn": "rv-2024-festivalvard",
+          "kalla": "RVCFwebb-109.jpg",
+          "alt": "Festivalvärd i väst och hatt pratar med en besökare"
+        },
+        {
+          "namn": "rv-2024-maja-francis",
+          "kalla": "RVCFwebb-146.jpg",
+          "alt": "Maja Francis och band på stora scenen"
+        },
+        {
+          "namn": "rv-2024-maja-francis-sjunger",
+          "kalla": "RVCFwebb-200.jpg",
+          "alt": "Maja Francis sjunger med akustisk gitarr"
+        },
+        {
+          "namn": "rv-2024-the-swedish-cowboy",
+          "kalla": "RVCFwebb-131.jpg",
+          "alt": "The Swedish Cowboy spelar på stora scenen"
+        },
+        {
+          "namn": "rv-2024-doug-seegers",
+          "kalla": "RVCFwebb-273.jpg",
+          "alt": "Doug Seegers och band på stora scenen"
+        },
+        {
+          "namn": "rv-2024-kontrabas",
+          "kalla": "RVCFwebb-255.jpg",
+          "alt": "Band med kontrabas och banjo på stora scenen"
+        },
+        {
+          "namn": "rv-2024-duo-pa-scenen",
+          "kalla": "RVCFwebb-21.jpg",
+          "alt": "Duo på scenen, gitarrist i gul skjorta och kvinna vid keyboard"
+        },
+        {
+          "namn": "rv-2024-band-skogsbild",
+          "kalla": "RVCFwebb-66.jpg",
+          "alt": "Otis Kerp på scenen 2024, publik i hattar framför"
+        },
+        {
+          "namn": "rv-2024-fiol",
+          "kalla": "RVCFwebb-243.jpg",
+          "alt": "Fiolspelare i svart cowboyhatt"
+        },
+        {
+          "namn": "rv-2024-full-framfor-scenen",
+          "kalla": "RVCFwebb-178.jpg",
+          "alt": "Fullt framför scenen under en kvällskonsert"
+        },
+        {
+          "namn": "rv-2024-publik-i-graset",
+          "kalla": "RVCFwebb-148.jpg",
+          "alt": "Publik sitter i gräset och lyssnar"
+        },
+        {
+          "namn": "rv-2024-publik-med-filtar",
+          "kalla": "RVCFwebb-96.jpg",
+          "alt": "Publik med filtar sitter längs staketet framför scenen"
+        },
+        {
+          "namn": "rv-2024-publadan",
+          "kalla": "RVCFwebb-221.jpg",
+          "alt": "Fullt ös inne i ladan under rött scenljus"
+        },
+        {
+          "namn": "rv-2024-sjunger-med",
+          "kalla": "RVCFwebb-227.jpg",
+          "alt": "Publiken sjunger med inne i ladan"
+        },
+        {
+          "namn": "rv-2024-bla-hatten",
+          "kalla": "RVCFwebb-225.jpg",
+          "alt": "Skrattande man i blå cowboyhatt mitt i publiken"
+        },
+        {
+          "namn": "rv-2024-siluett-solnedgang",
+          "kalla": "RVCFwebb-143.jpg",
+          "alt": "Siluett av en artist mot en röd kvällshimmel"
+        },
+        {
+          "namn": "rv-2024-siluett-over-dalen",
+          "kalla": "RVCFwebb-89.jpg",
+          "alt": "Siluett av en cowboyhatt mot dalen och bergen"
+        },
+        {
+          "namn": "rv-2024-utsikten",
+          "kalla": "RVCFwebb-101.jpg",
+          "alt": "Par med armarna om varandra blickar ut över dalen"
+        },
+        {
+          "namn": "rv-2024-solnedgang",
+          "kalla": "RVCFwebb-237.jpg",
+          "alt": "Siluett av kvinna i cowboyhatt mot en brinnande solnedgång"
+        },
+        {
+          "namn": "rv-2024-lagereld",
+          "kalla": "RVCFwebb-239.jpg",
+          "alt": "Lägereld på campingen sent på kvällen"
+        }
       ]
     }
   ]

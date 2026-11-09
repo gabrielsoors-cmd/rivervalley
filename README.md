@@ -40,6 +40,7 @@ Sök efter dessa för att hitta rätt ställe direkt:
 | `RV-PRESS` | `festivalen.html` | Pressarkivet, en lista per år |
 | `RV-KARTA` | `praktisk-info.html` | Kartan och koordinaterna till Boggberget |
 | `RV-GSC` | `_build/partials/head.html` | Plats för Google Search Consoles verifieringstagg |
+| `RV-HERO` | `index.html` | Hero-bilden (traktorn med flaket, 2026). Samma bild ligger i delningsbilden |
 | `RV-FAQ-DATA` | `praktisk-info.html` | Vanliga frågor för Google |
 | `RV-UTKAST` | `_build/partials/` | `noindex` och utkastbandet. Tas bort vid lansering |
 | `RV-ADRESS` | `_build/sync.py`, `_build/galleri.py`, `404.html` | Sajtens adress |
@@ -140,7 +141,11 @@ Skriptet bygger albumen och bildlistan i `sitemap.xml`. Alla länkar med
 - Alla festivalbilder är tagna av Tobbe Nilsson och ägs av festivalen.
   Krediteras en gång, i sidfoten.
 - Delningsbilden för Facebook m.fl. är `images/og-river-valley-2027.jpg`
-  (1200 × 630).
+  (1200 × 630): traktorbilden från 2026 med loggan och datumet i ett band
+  längst ner. Byter ni hero-bild, gör en ny delningsbild i samma stil.
+- Heron på datorn har loggan, datumet och nedräkningen i ett band längst ner
+  så att bilden syns ovanför. Beskärningen styrs av `object-position` under
+  `.hero-bild` i `css/style.css`.
 - Loggan finns i vitt och svart: `images/rv-logga-vit-*.webp`,
   `images/rv-logga-svart-*.webp`. Favicon och appikoner är hatten ur loggan.
 
