@@ -42,7 +42,8 @@ Sök efter dessa för att hitta rätt ställe direkt:
 | `RV-GSC` | `_build/partials/head.html` | Plats för Google Search Consoles verifieringstagg |
 | `RV-HERO` | `index.html` | Hero-bilden (traktorn med flaket, 2026). Samma bild ligger i delningsbilden |
 | `RV-FAQ-DATA` | `praktisk-info.html` | Vanliga frågor för Google |
-| `RV-UTKAST` | `_build/partials/` | `noindex` och utkastbandet. Tas bort vid lansering |
+| `RV-UTKAST` | `_build/partials/head.html` | `noindex`, som döljer sajten för Google. Tas bort vid lansering |
+| `RV-NYHET` | `_build/partials/header.html`, `js/main.js` | Nyhetsbandet högst upp. Byter text själv vid biljettsläppet, under festivalen och efteråt |
 | `RV-ADRESS` | `_build/sync.py`, `_build/galleri.py`, `404.html` | Sajtens adress |
 | `RV:SIDHUVUD`, `RV:SIDFOT`, `RV:GEMENSAM-HEAD` | alla sidor | Gemensamma delar, se nedan |
 
@@ -87,8 +88,8 @@ eller "Tider kommer" (sök på dem). Dagtid är alla åldrar välkomna, på kvä
 
 ## Lansering (byta från Wix)
 
-1. Ta bort allt under `RV-UTKAST` i `_build/partials/head.html` och
-   `_build/partials/header.html`. Kör `python3 _build/sync.py`.
+1. Ta bort raden under `RV-UTKAST` i `_build/partials/head.html`.
+   Kör `python3 _build/sync.py`.
 2. Byt `BAS_404` i `_build/sync.py` och länkarna i `404.html` från
    `/rivervalley/` till `/`.
 3. Lägg en fil `CNAME` i roten med texten `www.rivervalley.se`.

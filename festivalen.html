@@ -37,8 +37,13 @@
 <body>
     <!-- RV:SIDHUVUD START -->
     <a class="hoppa-till" href="#innehall">Hoppa till innehållet</a>
-    <!-- RV-UTKAST: ta bort bandet nedan när sajten går live -->
-    <p class="utkast-band">Utkast till nya rivervalley.se – inte live än</p>
+    <!-- RV-NYHET: nyhetsbandet högst upp. Texten nedan visas före biljettsläppet.
+         js/main.js byter text och länk av sig självt när biljetterna släpps,
+         under festivalen och efteråt (tiderna står under RV-SLAPP och RV-DATUM). -->
+    <a class="nyhetsband" href="biljetter.html" data-nyhet data-bas="">
+        <span class="nyhet-lang">Biljetter &amp; camping släpps 1 december kl. 12.00. Förra året tog campingen slut, så var snabb! <strong>Mer info →</strong></span>
+        <span class="nyhet-kort">Biljettsläpp 1 december kl. 12.00 <strong>→</strong></span>
+    </a>
     <header class="sidhuvud">
         <div class="matt">
             <a class="logga-lank" href="./" aria-label="River Valley Countryfestival, till startsidan">

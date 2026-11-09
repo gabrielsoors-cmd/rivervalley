@@ -108,6 +108,41 @@
         });
     }
 
+    /* Nyhetsbandet högst upp (RV-NYHET). Före släppet står texten i HTML:en,
+       efter släppet, under festivalen och efteråt byts den här. */
+    var nyhet = document.querySelector('[data-nyhet]');
+    var nyhetLage = '';
+    var NYHETER = {
+        ute: { sida: 'biljetter.html',
+               lang: 'Biljetterna är ute! Festivalpass och camping till 1–3 juli 2027 på Boggberget.', kort: 'Biljetterna är ute!', lank: 'Köp nu →' },
+        festival: { sida: 'praktisk-info.html',
+               lang: 'Nu kör vi på Boggberget! Allt om parkering, camping och tider hittar du här.', kort: 'Nu kör vi på Boggberget!', lank: 'Hitta hit →' },
+        efter: { sida: 'galleri.html',
+               lang: 'Tack för i år, alla cowboys och cowgirls! Se bilderna från festivalen.', kort: 'Tack för i år!', lank: 'Se bilderna →' }
+    };
+    function uppdateraNyhet() {
+        if (!nyhet) return;
+        var nu = Date.now();
+        var lage = nu < slapp ? '' : nu < start ? 'ute' : nu < slut ? 'festival' : 'efter';
+        if (lage === nyhetLage || !NYHETER[lage]) { nyhetLage = lage; return; }
+        nyhetLage = lage;
+        var n = NYHETER[lage];
+        nyhet.setAttribute('href', (nyhet.getAttribute('data-bas') || '') + n.sida);
+        var lang = nyhet.querySelector('.nyhet-lang');
+        var kort = nyhet.querySelector('.nyhet-kort');
+        lang.textContent = n.lang + ' ';
+        kort.textContent = n.kort + ' ';
+        [lang, kort].forEach(function (el) {
+            var st = document.createElement('strong');
+            st.textContent = n.lank;
+            el.appendChild(st);
+        });
+    }
+    if (!isNaN(slapp)) {
+        uppdateraNyhet();
+        setInterval(uppdateraNyhet, 30 * 1000);
+    }
+
     if (nedrakningar.length && !isNaN(slapp)) {
         nedrakningar.forEach(function (el) { el.classList.add('igang'); });
         uppdatera();
