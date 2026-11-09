@@ -59,6 +59,13 @@
     --black: #4a4a4a;        /* dämpad text på ljus botten */
     --linje: rgba(255, 255, 255, 0.18);
     --linje-mork: rgba(17, 17, 17, 0.16);
+    /* Mörkbrunt westernläder, för de bruna sektionerna */
+    --lader: #2b1c12;
+    --lader-2: #3a2618;
+    --sand: #efe3cc;         /* text på brun botten */
+    --sand-dampad: #cbb898;
+    --hampa: #c0915a;        /* små detaljer på brun botten */
+    --linje-sand: rgba(239, 227, 204, 0.2);
 
     --rubrik: 'Oswald', 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
     --text: 'Bitter', Georgia, 'Times New Roman', serif;
@@ -524,7 +531,7 @@ hr { border: 0; border-top: 1px solid var(--linje); margin: 2.5rem 0; }
 }
 .hero-datum span[aria-hidden] { opacity: 0.6; margin-inline: 0.4em; }
 .hero-plats { display: block; font-size: 0.8em; margin-top: 0.3rem; }
-.hero-plats-streck { display: none; }
+.hero-plats-streck { display: none; margin-left: 0.6em !important; }
 @media (min-width: 640px) {
     .hero-plats { display: inline; font-size: 1em; margin: 0; }
     .hero-plats-streck { display: inline; }
@@ -1170,6 +1177,220 @@ html.ljuslada-oppen { overflow: hidden; }
 .fotoband .ingress { margin-inline: auto; }
 .fotoband .ingress { color: #e2e2e2; }
 
+/* ---------- Mörkbrunt westernstycke ----------
+   Läderbrun botten med plankfogar och korn, gräddvit text. */
+.sektion--lader {
+    background-color: var(--lader);
+    background-image:
+        var(--korn),
+        repeating-linear-gradient(180deg, transparent 0 calc(5.5rem - 2px), rgba(0, 0, 0, 0.3) calc(5.5rem - 2px) 5.5rem),
+        radial-gradient(120% 90% at 50% 0%, rgba(255, 200, 140, 0.09), transparent 65%);
+    color: var(--sand);
+}
+.sektion--lader .ingress,
+.sektion--lader .dampad,
+.sektion--lader p { color: var(--sand-dampad); }
+.sektion--lader .ingress { color: var(--sand); }
+.sektion--lader .overrubrik { color: var(--hampa); }
+.sektion--lader .knapp { background: var(--sand); border-color: var(--sand); color: var(--lader); }
+.sektion--lader .knapp:hover { background: transparent; color: var(--sand); }
+.sektion--lader .knapp--linje { background: transparent; color: var(--sand); }
+.sektion--lader .knapp--linje:hover { background: var(--sand); color: var(--lader); }
+.sektion--lader a:not(.knapp) { color: var(--sand); }
+.sektion--lader .stubb .stubb-typ,
+.sektion--lader .stubb-fot span { color: var(--black); }
+.sektion--lader .stubb p.western { color: var(--kol); }
+.sektion--lader .stubb { box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35); }
+.sektion--lader .platshallare { border-color: var(--linje-sand); }
+.sektion--lader .platshallare p { color: var(--sand-dampad); }
+.sektion--lader .platshallare .overrubrik { color: var(--hampa); }
+
+/* Överrubrik med westernstil */
+.overrubrik--western {
+    font-family: var(--western);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    font-size: clamp(1.1rem, 3.4vw, 1.4rem);
+}
+
+/* Fotografi uppnålat på väggen */
+.uppnalat {
+    position: relative;
+    margin: 0.75rem 0 0;
+    background: var(--sand);
+    padding: 0.7rem 0.7rem 0;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.45);
+    transform: rotate(-1.4deg);
+    max-width: 36rem;
+    justify-self: center;
+}
+.uppnalat::before {
+    content: '';
+    position: absolute;
+    top: -0.55rem;
+    left: 50%;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-left: -0.55rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #8a8a8a, #2a2a2a 70%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.uppnalat img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.uppnalat figcaption {
+    font-family: var(--western);
+    color: var(--lader);
+    text-align: center;
+    font-size: 1.05rem;
+    padding: 0.7rem 0 0.9rem;
+}
+@media (min-width: 900px) {
+    .uppnalat { transform: rotate(-2deg); }
+}
+
+/* Tidslinje */
+.tidslinje {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+}
+@media (min-width: 700px) { .tidslinje { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1080px) { .tidslinje { grid-template-columns: repeat(3, 1fr); gap: 2rem 2.5rem; } }
+.tidslinje li {
+    border-top: 2px solid var(--hampa);
+    padding-top: 1rem;
+}
+.tidslinje-ar {
+    display: block;
+    font-family: var(--western);
+    font-size: 2.2rem;
+    line-height: 1;
+    color: var(--hampa);
+    margin-bottom: 0.6rem;
+}
+.tidslinje h3 { font-size: 1.4rem; margin-bottom: 0.4rem; }
+.tidslinje p { font-size: 1rem; margin-bottom: 0.6rem; }
+.tidslinje-kalla {
+    font-family: var(--rubrik);
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+.tidslinje-kalla[rel~="noopener"]::after { content: ' ↗'; }
+.tidslinje-kalla:not([rel])::after { content: ' →'; }
+
+/* Pressarkivet */
+.pressar {
+    display: grid;
+    gap: 2rem 3rem;
+}
+@media (min-width: 900px) { .pressar { grid-template-columns: repeat(2, 1fr); } }
+.pressar-ar h3 {
+    font-size: 1.1rem;
+    letter-spacing: 0.18em;
+    color: var(--rok);
+    margin-bottom: 0.5rem;
+}
+
+/* Utmärkelser och siffror (startsidan) */
+.meriter {
+    display: grid;
+    gap: 1px;
+    background: var(--linje);
+    border: 1px solid var(--linje);
+    border-radius: var(--radie);
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+@media (min-width: 700px) { .meriter { grid-template-columns: repeat(2, 1fr); } }
+.meriter > div {
+    background: var(--kol-2);
+    padding: 1.5rem 1.4rem;
+}
+.meriter strong {
+    display: block;
+    font-family: var(--rubrik);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin-bottom: 0.4rem;
+}
+.meriter span { color: var(--rok); }
+
+/* Sociala länkar */
+.sociala {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.sociala a {
+    display: inline-block;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--linje);
+    border-radius: 2rem;
+    font-family: var(--rubrik);
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.sociala a:hover { background: var(--vit); color: var(--kol); text-decoration: none; }
+.huvudmeny .meny-sociala { margin-top: 1.5rem; }
+.huvudmeny .meny-sociala li { border: 0; }
+.huvudmeny .meny-sociala a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.6rem 1.1rem;
+}
+@media (min-width: 1080px) {
+    .huvudmeny .meny-sociala { display: none !important; }
+}
+
+/* Kartan (laddas vid klick) */
+.karta {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radie);
+    overflow: hidden;
+    background: var(--kol-3);
+}
+.karta iframe { width: 100%; height: 100%; border: 0; display: block; }
+.karta-knapp {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    gap: 0.4rem;
+    background: var(--kol);
+    background-image: var(--korn);
+    color: var(--vit);
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    text-align: center;
+    padding: 1.5rem;
+}
+.karta-knapp strong {
+    font-family: var(--rubrik);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.karta-knapp span:last-child { color: var(--rok); font-size: 0.95rem; }
+.karta-knapp:hover strong { text-decoration: underline; }
+
 /* ---------- 14. Hjälpklasser ---------- */
 .dold {
     position: absolute !important;
@@ -1195,3 +1416,4 @@ html.ljuslada-oppen { overflow: hidden; }
 
 /* E-postadresser ska inte skrivas med versaler */
 .faktarad dd a[href^="mailto"] { text-transform: none; font-size: 1.15rem; overflow-wrap: anywhere; }
+.overrubrik--western { align-items: baseline; }

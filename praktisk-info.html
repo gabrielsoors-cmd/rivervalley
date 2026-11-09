@@ -7,6 +7,12 @@
     <!-- RV-UTKAST: ta bort raden nedan när sajten ersätter Wix-sajten på rivervalley.se -->
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#111111">
+    <!-- RV-GSC: Google Search Console. Verifiera helst med en DNS-post (TXT) hos
+         domänleverantören, se README. Väljer ni HTML-taggen i stället: klistra in
+         koden från Search Console här, ta bort kommentarstecknen och kör
+         python3 _build/sync.py.
+    <meta name="google-site-verification" content="KOD-FRAN-SEARCH-CONSOLE">
+    -->
     <link rel="preload" href="fonts/oswald-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/bitter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
@@ -38,22 +44,22 @@
         {
           "@type": "Question",
           "name": "Var ligger River Valley Countryfestival?",
-          "acceptedAnswer": { "@type": "Answer", "text": "På Boggbergets festplats i Evertsberg, Älvdalen i Dalarna, cirka tolv kilometer från Älvdalens centrum." }
+          "acceptedAnswer": { "@type": "Answer", "text": "På Boggbergets festplats i Evertsberg, Älvdalen i Dalarna, cirka tolv kilometer från Älvdalens centrum. Koordinater: 61.130760, 13.972088." }
         },
         {
           "@type": "Question",
           "name": "När är River Valley Countryfestival 2027?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Torsdag 1 juli till lördag 3 juli 2027. Torsdag är det smygstart kl. 18.00–01.00, fredag och lördag är det öppet kl. 12.00–01.00." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Torsdag 1 juli till lördag 3 juli 2027, med smygstart på torsdagen. Exakta öppettider släpps senare." }
         },
         {
           "@type": "Question",
           "name": "När släpps biljetterna?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Festivalpass och campingplatser släpps 1 december 2026 kl. 12.00 på rivervalley.se." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Alla festivalpass och campingplatser släpps samtidigt, 1 december 2026 kl. 12.00, på rivervalley.se." }
         },
         {
           "@type": "Question",
           "name": "Får barn följa med?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Barn under 12 år går in gratis i målsmans sällskap. Barn och ungdomar under 18 år kommer in i målsmans sällskap och får ett eget festivalband. I barerna är det 18-årsgräns." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja, dagtid är alla åldrar välkomna och barn under 12 år går in gratis i målsmans sällskap. På kvällen är det 18-årsgräns på festivalområdet. Exakta tider släpps senare." }
         },
         {
           "@type": "Question",
@@ -100,6 +106,10 @@
                     <li><a href="kontakt.html" data-sida="kontakt.html">Kontakt</a></li>
                     <li class="meny-biljetter"><a href="biljetter.html" data-sida="biljetter.html">Biljetter</a></li>
                 </ul>
+                <ul class="sociala meny-sociala" aria-label="Följ oss">
+                    <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                    <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -134,13 +144,24 @@
                         <h2 id="hitta-rubrik">Boggbergets festplats</h2>
                         <p class="ingress">Evertsberg, Älvdalen. Uppe på berget, cirka tolv kilometer från Älvdalens centrum.</p>
                         <div class="knapprad">
-                            <a class="knapp knapp--mork" href="https://www.google.com/maps/search/?api=1&amp;query=Boggbergets+festplats%2C+Evertsberg%2C+%C3%84lvdalen" rel="noopener">Öppna i Google Maps</a>
+                            <a class="knapp knapp--mork" href="https://www.google.com/maps/dir/?api=1&amp;destination=61.130760%2C13.972088" rel="noopener">Vägbeskrivning</a>
+                            <a class="knapp knapp--mork-linje" href="https://maps.app.goo.gl/FVDmbNjenQm2CBRGA" rel="noopener">Öppna i Google Maps</a>
+                        </div>
+                        <!-- RV-KARTA: kartan laddas från Google först när besökaren klickar,
+                             så att inga Google-cookies sätts i onödan. Koordinater:
+                             61.130760, 13.972088 (Boggbergets festplats). -->
+                        <div class="karta mt-2">
+                            <button type="button" class="karta-knapp" data-karta="https://maps.google.com/maps?q=61.130760,13.972088&amp;z=13&amp;output=embed">
+                                <span class="overrubrik">Karta</span>
+                                <strong>Visa kartan</strong>
+                                <span>Kartan laddas från Google när du klickar.</span>
+                            </button>
                         </div>
                     </div>
                     <dl class="faktarad">
-                        <div><dt>Torsdag 1 juli</dt><dd>18.00–01.00<small>Smygstart</small></dd></div>
-                        <div><dt>Fredag 2 juli</dt><dd>12.00–01.00<small>Nu river vi igång</small></dd></div>
-                        <div><dt>Lördag 3 juli</dt><dd>12.00–01.00<small>Nu blir det draaaag!</small></dd></div>
+                        <div><dt>Torsdag 1 juli</dt><dd>Smygstart<small>Tider släpps senare</small></dd></div>
+                        <div><dt>Fredag 2 juli</dt><dd>Nu river vi igång<small>Tider släpps senare</small></dd></div>
+                        <div><dt>Lördag 3 juli</dt><dd>Draaaag!<small>Tider släpps senare</small></dd></div>
                         <div><dt>Adress</dt><dd>Boggberget<small>Evertsberg, Älvdalen</small></dd></div>
                     </dl>
                 </div>
@@ -210,12 +231,12 @@
                         <p>Alla över 12 år betalar ordinarie pris. Köp gärna i förköp, så är din plats säkrad och vi kan planera bättre.</p>
                     </div>
                     <div class="info">
-                        <h3>Under 18</h3>
-                        <p>Barn och ungdomar under 18 år kommer in på festivalområdet i målsmans sällskap och får ett eget festivalband.</p>
+                        <h3>Dagtid</h3>
+                        <p>Dagtid är alla åldrar välkomna på festivalområdet, även du som är under 18.</p>
                     </div>
                     <div class="info">
-                        <h3>Barerna</h3>
-                        <p>I barerna på området är det 18-årsgräns. Ta med leg.</p>
+                        <h3>Kvällstid</h3>
+                        <p>På kvällen är det 18-årsgräns. Ta med leg. Exakta tider släpps senare.</p>
                     </div>
                     <div class="info">
                         <h3>65 och 80 år</h3>
@@ -266,6 +287,10 @@
                     <img src="images/rv-logga-vit-600.webp" alt="River Valley Countryfestival" width="600" height="258" loading="lazy">
                     <p class="sidfot-datum">1–3 juli 2027</p>
                     <p>Boggbergets festplats, Evertsberg, Älvdalen</p>
+                    <ul class="sociala" aria-label="Följ oss">
+                        <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Festivalen</h2>
@@ -291,13 +316,13 @@
                         <li><a href="mailto:howdy@rivervalley.se">howdy@rivervalley.se</a></li>
                         <li><a href="tel:+46736493050">073-649 30 50</a></li>
                         <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/rivervalleycountryfestival" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidfot-botten">
                 <p>River Valley Countryfestival arrangeras av Vildbyn i Älvdalen, som också står bakom <a href="https://backwoodsfestival.se/" rel="noopener">Backwoods Festival</a>.</p>
-                <p>Foto: Tobbe Nilsson m.fl. Sajten sätter inga cookies. &copy; 2026 River Valley Countryfestival</p>
+                <p>&copy; 2026 River Valley Countryfestival. Foto: Tobbe Nilsson. Sajten sätter inga cookies.</p>
             </div>
         </div>
     </footer>

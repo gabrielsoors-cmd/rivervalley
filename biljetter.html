@@ -7,6 +7,12 @@
     <!-- RV-UTKAST: ta bort raden nedan när sajten ersätter Wix-sajten på rivervalley.se -->
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#111111">
+    <!-- RV-GSC: Google Search Console. Verifiera helst med en DNS-post (TXT) hos
+         domänleverantören, se README. Väljer ni HTML-taggen i stället: klistra in
+         koden från Search Console här, ta bort kommentarstecknen och kör
+         python3 _build/sync.py.
+    <meta name="google-site-verification" content="KOD-FRAN-SEARCH-CONSOLE">
+    -->
     <link rel="preload" href="fonts/oswald-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/bitter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
@@ -53,6 +59,10 @@
                     <li><a href="kontakt.html" data-sida="kontakt.html">Kontakt</a></li>
                     <li class="meny-biljetter"><a href="biljetter.html" data-sida="biljetter.html" aria-current="page">Biljetter</a></li>
                 </ul>
+                <ul class="sociala meny-sociala" aria-label="Följ oss">
+                    <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                    <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -69,7 +79,7 @@
             <div class="matt">
                 <p class="overrubrik">Köp &amp; boka</p>
                 <h1 id="sidrubrik">Biljetter &amp; camping</h1>
-                <p class="ingress">Festivalpass och campingplatser till River Valley 2027 släpps 1 december kl. 12.00.</p>
+                <p class="ingress">Alla festivalpass och campingplatser till River Valley 2027 släpps samtidigt, 1 december kl. 12.00.</p>
                 <div class="nedrakning nedrakning--vanster mt-2" data-nedrakning>
                     <p class="nedrakning-etikett">Biljetterna släpps om</p>
                     <ul class="nedrakning-siffror" role="timer" aria-label="Tid kvar">
@@ -88,7 +98,7 @@
             </div>
         </section>
 
-        <section class="sektion sektion--ljus" id="festivalpass" aria-labelledby="pass-rubrik">
+        <section class="sektion sektion--lader" id="festivalpass" aria-labelledby="pass-rubrik">
             <div class="matt">
                 <div class="sektion-topp">
                     <p class="overrubrik">Festivalpass</p>
@@ -101,19 +111,19 @@
                         <p class="stubb-typ">Dagpass</p>
                         <h3>Torsdag 1 juli</h3>
                         <p class="western">[smygstart]</p>
-                        <div class="stubb-fot"><span>18.00–01.00</span><strong>Släpps 1/12</strong></div>
+                        <div class="stubb-fot"><span>Tider kommer</span><strong>Släpps 1/12</strong></div>
                     </article>
                     <article class="stubb">
                         <p class="stubb-typ">Dagpass</p>
                         <h3>Fredag 2 juli</h3>
                         <p class="western">[nu river vi igång]</p>
-                        <div class="stubb-fot"><span>12.00–01.00</span><strong>Släpps 1/12</strong></div>
+                        <div class="stubb-fot"><span>Tider kommer</span><strong>Släpps 1/12</strong></div>
                     </article>
                     <article class="stubb">
                         <p class="stubb-typ">Dagpass</p>
                         <h3>Lördag 3 juli</h3>
                         <p class="western">[nu blir det draaaag!]</p>
-                        <div class="stubb-fot"><span>12.00–01.00</span><strong>Släpps 1/12</strong></div>
+                        <div class="stubb-fot"><span>Tider kommer</span><strong>Släpps 1/12</strong></div>
                     </article>
                     <article class="stubb">
                         <p class="stubb-typ">Helgpass</p>
@@ -146,7 +156,7 @@
                     <h3>Här öppnar biljettbutiken</h3>
                     <p>Du köper festivalpass direkt här på sidan.</p>
                     <div class="knapprad knapprad--mitten">
-                        <a class="knapp knapp--mork" href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Följ oss för påminnelse</a>
+                        <a class="knapp" href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Följ oss för påminnelse</a>
                     </div>
                 </div>
                 <!-- Kwikk-widgeten. Avkommentera när butiken är klar (se steg 2 ovan).
@@ -227,7 +237,7 @@
                 <ul class="villkor">
                     <li>Barn under 12 år går in gratis i målsmans sällskap.</li>
                     <li>Från 12 år betalar alla ordinarie pris.</li>
-                    <li>Under 18 år kommer du in i målsmans sällskap och får ett eget festivalband.</li>
+                    <li>Under 18? Välkommen dagtid! På kvällen är det 18-årsgräns. Exakta tider kommer senare.</li>
                     <li>18-årsgräns och leg i barerna.</li>
                     <li>Alla över 65 år har rabatt.</li>
                     <li>Alla över 80 år går in gratis.</li>
@@ -248,6 +258,10 @@
                     <img src="images/rv-logga-vit-600.webp" alt="River Valley Countryfestival" width="600" height="258" loading="lazy">
                     <p class="sidfot-datum">1–3 juli 2027</p>
                     <p>Boggbergets festplats, Evertsberg, Älvdalen</p>
+                    <ul class="sociala" aria-label="Följ oss">
+                        <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Festivalen</h2>
@@ -273,13 +287,13 @@
                         <li><a href="mailto:howdy@rivervalley.se">howdy@rivervalley.se</a></li>
                         <li><a href="tel:+46736493050">073-649 30 50</a></li>
                         <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/rivervalleycountryfestival" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidfot-botten">
                 <p>River Valley Countryfestival arrangeras av Vildbyn i Älvdalen, som också står bakom <a href="https://backwoodsfestival.se/" rel="noopener">Backwoods Festival</a>.</p>
-                <p>Foto: Tobbe Nilsson m.fl. Sajten sätter inga cookies. &copy; 2026 River Valley Countryfestival</p>
+                <p>&copy; 2026 River Valley Countryfestival. Foto: Tobbe Nilsson. Sajten sätter inga cookies.</p>
             </div>
         </div>
     </footer>

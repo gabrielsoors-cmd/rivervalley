@@ -7,6 +7,12 @@
     <!-- RV-UTKAST: ta bort raden nedan när sajten ersätter Wix-sajten på rivervalley.se -->
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#111111">
+    <!-- RV-GSC: Google Search Console. Verifiera helst med en DNS-post (TXT) hos
+         domänleverantören, se README. Väljer ni HTML-taggen i stället: klistra in
+         koden från Search Console här, ta bort kommentarstecknen och kör
+         python3 _build/sync.py.
+    <meta name="google-site-verification" content="KOD-FRAN-SEARCH-CONSOLE">
+    -->
     <link rel="preload" href="fonts/oswald-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/bitter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
@@ -48,7 +54,7 @@
           "telephone": "+46736493050",
           "sameAs": [
             "https://www.instagram.com/rivervalley_countryfestival/",
-            "https://www.facebook.com/rivervalleycountryfestival"
+            "https://www.facebook.com/rivervalleycountryfestival/"
           ],
           "parentOrganization": { "@type": "Organization", "name": "Vildbyn" }
         },
@@ -65,8 +71,8 @@
           "@id": "https://www.rivervalley.se/#river-valley-2027",
           "name": "River Valley Countryfestival 2027",
           "description": "Countryfestival på Boggbergets festplats i Evertsberg, Älvdalen. Livemusik på tre scener, linedance, rodéo, tatueringslada, pop up-butiker, mat, barer och camping.",
-          "startDate": "2027-07-01T18:00:00+02:00",
-          "endDate": "2027-07-04T01:00:00+02:00",
+          "startDate": "2027-07-01",
+          "endDate": "2027-07-03",
           "eventStatus": "https://schema.org/EventScheduled",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "inLanguage": "sv",
@@ -83,9 +89,10 @@
               "@type": "PostalAddress",
               "streetAddress": "Boggbergets festplats, Evertsberg",
               "addressLocality": "Älvdalen",
-              "addressRegion": "Dalarna",
+            "addressRegion": "Dalarna",
               "addressCountry": "SE"
-            }
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 61.13076, "longitude": 13.972088 }
           },
           "organizer": { "@id": "https://www.rivervalley.se/#organisation" }
         }
@@ -114,6 +121,10 @@
                     <li><a href="galleri.html" data-sida="galleri.html">Galleri</a></li>
                     <li><a href="kontakt.html" data-sida="kontakt.html">Kontakt</a></li>
                     <li class="meny-biljetter"><a href="biljetter.html" data-sida="biljetter.html">Biljetter</a></li>
+                </ul>
+                <ul class="sociala meny-sociala" aria-label="Följ oss">
+                    <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                    <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
                 </ul>
             </nav>
         </div>
@@ -158,24 +169,25 @@
             </div>
         </section>
 
-        <section class="sektion sektion--ljus" aria-labelledby="intro-rubrik">
+        <section class="sektion sektion--lader" aria-labelledby="intro-rubrik">
             <div class="matt">
                 <div class="tva-kolumner">
                     <div>
-                        <p class="overrubrik">Take the country road to Boggberget</p>
+                        <p class="overrubrik overrubrik--western">Take the country road to Boggberget</p>
                         <h2 id="intro-rubrik">En helg i hatt och boots</h2>
                         <p class="ingress">Boots som dansar och cowboyhjärtan som slår extra hårt. För sjätte året samlas vi uppe på Boggberget i Evertsberg, Älvdalen.</p>
-                        <p>Du får den bästa countrymusiken, såklart. Men också linedance, rodéo, publada, god mat och dryck, tatueringslada, pop up-butiker och Dalarnas bästa stämning. Ta med en vän och kom!</p>
+                        <p>Du får den bästa countrymusiken, såklart. Men också linedance, rodéo, publada, god mat och dryck, tatueringslada, pop up-butiker och Dalarnas bästa stämning. Förra året kom drygt 2 600 besökare. Ta med en vän och kom!</p>
                         <div class="knapprad">
-                            <a class="knapp knapp--mork" href="festivalen.html">Mer om festivalen</a>
+                            <a class="knapp" href="festivalen.html">Mer om festivalen</a>
+                            <a class="knapp knapp--linje" href="biljetter.html">Biljetter &amp; camping</a>
                         </div>
                     </div>
-                    <figure class="bild-ram">
+                    <figure class="uppnalat">
                         <img src="images/foto/rv-2026-fyra-vaninnor-800.webp"
                              srcset="images/foto/rv-2026-fyra-vaninnor-800.webp 800w, images/foto/rv-2026-fyra-vaninnor-1600.webp 1600w"
                              sizes="(min-width: 900px) 34rem, 100vw" width="800" height="533" loading="lazy" decoding="async"
                              alt="Fyra väninnor i vita spetsblusar och hattar med bergen bakom sig">
-                        <figcaption>Hattar på, utsikt på. River Valley 2026.</figcaption>
+                        <figcaption>Hattar på, utsikt på. Boggberget 2026.</figcaption>
                     </figure>
                 </div>
             </div>
@@ -198,7 +210,7 @@
                     </div>
                     <div>
                         <dt>Camping</dt>
-                        <dd>Med eller utan el<small>Bokas på biljettsidan</small></dd>
+                        <dd>Med eller utan el<small>Släpps också 1 december</small></dd>
                     </div>
                 </dl>
             </div>
@@ -258,7 +270,7 @@
                 <div class="sektion-topp sektion-topp--mitten">
                     <p class="overrubrik">Line-up 2027</p>
                     <h2 id="artister-rubrik">Artisterna släpps snart</h2>
-                    <p class="ingress">Vi spikar årets line-up just nu. Följ oss på <a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram</a> och <a href="https://www.facebook.com/rivervalleycountryfestival" rel="noopener">Facebook</a>, så får du veta först.</p>
+                    <p class="ingress">Vi spikar årets line-up just nu. Följ oss på <a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram</a> och <a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook</a>, så får du veta först.</p>
                 </div>
                 <span class="ar-etikett">Har stått på vår scen</span>
                 <ul class="artistvagg">
@@ -270,7 +282,9 @@
                     <li>Honeywood Sisters</li>
                     <li>Stonefish</li>
                     <li>Drängarna</li>
-                    <li>Jonas Elfqvist</li>
+                    <li>Christina Lindberg</li>
+                    <li>Otis Kerp</li>
+                    <li>Emma Svensson</li>
                     <li>Cotton Eye Joe</li>
                 </ul>
                 <div class="knapprad knapprad--mitten">
@@ -333,6 +347,31 @@
             </div>
         </section>
 
+        <section class="sektion sektion--kol2" aria-labelledby="media-rubrik">
+            <div class="matt">
+                <div class="sektion-topp">
+                    <p class="overrubrik">Skrivet om oss</p>
+                    <h2 id="media-rubrik">Det pratas om River Valley</h2>
+                </div>
+                <div class="meriter">
+                    <div>
+                        <strong>Drygt 2 600 besökare</strong>
+                        <span>Nytt publikrekord 2026, enligt <a href="https://www.siljannews.se/alvdalen/publiksucce-for-river-valley-country-festival/" rel="noopener">Siljan News</a>.</span>
+                    </div>
+                    <div>
+                        <strong>Nominerad 2023</strong>
+                        <span>Årets arrangör på Dalecarlia Music Awards, enligt <a href="https://www.sverigesradio.se/artikel/nu-avslojas-nomineringarna-till-dma" rel="noopener">Sveriges Radio</a>.</span>
+                    </div>
+                </div>
+                <ul class="pressrader">
+                    <li><a href="https://www.siljannews.se/alvdalen/publiksucce-for-river-valley-country-festival/" rel="noopener"><span>Siljan News · 2026</span><strong>Publiksuccé för River Valley Country Festival</strong></a></li>
+                    <li><a href="https://www.siljannews.se/alvdalen/2000-besokare-hannahs-countrygala-fortsatter-att-vaxa/" rel="noopener"><span>Siljan News · 2025</span><strong>2000 besökare – Hannahs countryfestival fortsätter att växa</strong></a></li>
+                    <li><a href="https://www.moratidning.se/alvdalen/publikrekord-pa-festivalen-det-ar-klockrent/" rel="noopener"><span>Mora Tidning · 2026</span><strong>Publikrekord på festivalen: ”Det är klockrent”</strong></a></li>
+                </ul>
+                <p class="mt-2"><a class="pil-lank" href="festivalen.html#press">Alla artiklar</a></p>
+            </div>
+        </section>
+
         <section class="sektion sektion--ljus" aria-labelledby="veta-rubrik">
             <div class="matt">
                 <div class="sektion-topp">
@@ -342,7 +381,7 @@
                 <div class="info-grid">
                     <div class="info">
                         <h3>Barn &amp; ålder</h3>
-                        <p>Barn under 12 år går in gratis i målsmans sällskap. Under 18 år kommer du in med målsman, och i barerna är det 18-årsgräns.</p>
+                        <p>Dagtid är alla åldrar välkomna, och barn under 12 år går in gratis i målsmans sällskap. På kvällen är det 18-årsgräns. Exakta tider kommer.</p>
                     </div>
                     <div class="info">
                         <h3>Hundar</h3>
@@ -393,6 +432,10 @@
                     <img src="images/rv-logga-vit-600.webp" alt="River Valley Countryfestival" width="600" height="258" loading="lazy">
                     <p class="sidfot-datum">1–3 juli 2027</p>
                     <p>Boggbergets festplats, Evertsberg, Älvdalen</p>
+                    <ul class="sociala" aria-label="Följ oss">
+                        <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Festivalen</h2>
@@ -418,13 +461,13 @@
                         <li><a href="mailto:howdy@rivervalley.se">howdy@rivervalley.se</a></li>
                         <li><a href="tel:+46736493050">073-649 30 50</a></li>
                         <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/rivervalleycountryfestival" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidfot-botten">
                 <p>River Valley Countryfestival arrangeras av Vildbyn i Älvdalen, som också står bakom <a href="https://backwoodsfestival.se/" rel="noopener">Backwoods Festival</a>.</p>
-                <p>Foto: Tobbe Nilsson m.fl. Sajten sätter inga cookies. &copy; 2026 River Valley Countryfestival</p>
+                <p>&copy; 2026 River Valley Countryfestival. Foto: Tobbe Nilsson. Sajten sätter inga cookies.</p>
             </div>
         </div>
     </footer>

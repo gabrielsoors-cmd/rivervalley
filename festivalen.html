@@ -7,6 +7,12 @@
     <!-- RV-UTKAST: ta bort raden nedan när sajten ersätter Wix-sajten på rivervalley.se -->
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#111111">
+    <!-- RV-GSC: Google Search Console. Verifiera helst med en DNS-post (TXT) hos
+         domänleverantören, se README. Väljer ni HTML-taggen i stället: klistra in
+         koden från Search Console här, ta bort kommentarstecknen och kör
+         python3 _build/sync.py.
+    <meta name="google-site-verification" content="KOD-FRAN-SEARCH-CONSOLE">
+    -->
     <link rel="preload" href="fonts/oswald-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/bitter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +21,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <!-- RV:GEMENSAM-HEAD SLUT -->
     <title>Festivalen &amp; aktiviteter | River Valley Countryfestival, Älvdalen</title>
-    <meta name="description" content="Countryfestivalen på Boggberget i Evertsberg, Älvdalen. Livemusik, linedance, rodéo, tattoo och spådom, country wedding och quiz. Jobba, sälj eller spela hos oss.">
+    <meta name="description" content="Countryfestivalen på Boggberget i Evertsberg, Älvdalen, sedan 2022. Publikrekord 2026 med drygt 2 600 besökare. Livemusik, linedance, rodéo, aktiviteter och press.">
     <link rel="canonical" href="https://www.rivervalley.se/festivalen.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="sv_SE">
@@ -49,6 +55,10 @@
                     <li><a href="kontakt.html" data-sida="kontakt.html">Kontakt</a></li>
                     <li class="meny-biljetter"><a href="biljetter.html" data-sida="biljetter.html">Biljetter</a></li>
                 </ul>
+                <ul class="sociala meny-sociala" aria-label="Följ oss">
+                    <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                    <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -68,6 +78,7 @@
                 <p class="ingress">En helg i hatt, i boots som dansar och med cowboyhjärtan som slår extra hårt.</p>
                 <ul class="innehall-lankar mt-2">
                     <li><a href="#om">Om oss</a></li>
+                    <li><a href="#historia">Historia</a></li>
                     <li><a href="#aktiviteter">Aktiviteter</a></li>
                     <li><a href="#var-med">Var med</a></li>
                     <li><a href="#press">Press</a></li>
@@ -75,24 +86,71 @@
             </div>
         </section>
 
-        <section class="sektion sektion--ljus" id="om" aria-labelledby="om-rubrik">
+        <section class="sektion sektion--lader" id="om" aria-labelledby="om-rubrik">
             <div class="matt">
                 <div class="tva-kolumner">
                     <div>
-                        <p class="overrubrik">Sedan 2022</p>
+                        <p class="overrubrik overrubrik--western">Sedan 2022</p>
                         <h2 id="om-rubrik">Countryfesten på berget</h2>
                         <p class="ingress">River Valley Countryfestival är tre dagar med countrymusik, linedance och Dalarnas bästa stämning uppe på Boggberget i Evertsberg, Älvdalen.</p>
-                        <p>Idén föddes mitt i pandemin. Sommaren 2022 öppnade Hannah Risander från Älvdalen grindarna för första gången, mitt i den nya countryvågen. Sedan dess har festivalen vuxit och lockar besökare från hela landet.</p>
-                        <p>2027 kör vi för sjätte gången. Numera arrangeras festivalen av Vildbyn, samma gäng som gör Backwoods Festival på Rotsågen.</p>
+                        <p>Idén föddes mitt i pandemin. Sommaren 2022 öppnade Hannah Risander från Älvdalen grindarna för första gången, mitt i den nya countryvågen. Sedan dess har festivalen slagit publikrekord flera gånger och lockar besökare från hela landet. 2026 kom drygt 2 600 besökare.</p>
+                        <p>2027 kör vi för sjätte gången. Numera driver Hannah festivalen tillsammans med Gabriel Soors och Patrik "Putte" Samuelsson i Vildbyn, samma gäng som gör Backwoods Festival på Rotsågen.</p>
                     </div>
-                    <figure class="bild-ram">
+                    <figure class="uppnalat">
                         <img src="images/foto/rv-2026-countrykoren-800.webp"
                              srcset="images/foto/rv-2026-countrykoren-800.webp 800w, images/foto/rv-2026-countrykoren-1600.webp 1600w"
                              sizes="(min-width: 900px) 34rem, 100vw" width="800" height="533" loading="lazy" decoding="async"
                              alt="River Valley Countrykör sjunger på scenen framför den röda ladväggen">
-                        <figcaption>River Valley Countrykör på scen 2026.</figcaption>
+                        <figcaption>River Valley Countrykör, 2026.</figcaption>
                     </figure>
                 </div>
+            </div>
+        </section>
+
+        <section class="sektion sektion--kol2" id="historia" aria-labelledby="historia-rubrik">
+            <div class="matt">
+                <div class="sektion-topp">
+                    <p class="overrubrik">Så har vi vuxit</p>
+                    <h2 id="historia-rubrik">Från premiär till publikrekord</h2>
+                </div>
+                <ol class="tidslinje">
+                    <li>
+                        <span class="tidslinje-ar">2022</span>
+                        <h3>Premiären</h3>
+                        <p>Första River Valley Countryfestival smygstartar på Boggberget i Evertsberg.</p>
+                        <a class="tidslinje-kalla" href="https://www.moratidning.se/alvdalen/imorgon-smygstartar-den-nya-countryfestivalen-i-evertsberg/" rel="noopener">Mora Tidning</a>
+                    </li>
+                    <li>
+                        <span class="tidslinje-ar">2023</span>
+                        <h3>Nominerad till Årets arrangör</h3>
+                        <p>Festivalen nomineras till Årets arrangör på Dalecarlia Music Awards. På sommaren kommer omkring 1 400 countryälskare.</p>
+                        <a class="tidslinje-kalla" href="https://www.sverigesradio.se/artikel/nu-avslojas-nomineringarna-till-dma" rel="noopener">Sveriges Radio</a>
+                    </li>
+                    <li>
+                        <span class="tidslinje-ar">2024</span>
+                        <h3>Första publikrekordet</h3>
+                        <p>1 700 betalande besökare, med Maja Francis, Doug Seegers och The Swedish Cowboy på scen.</p>
+                        <a class="tidslinje-kalla" href="https://www.siljannews.se/alvdalen/succe-for-den-vaxande-musikfestivalen/" rel="noopener">Siljan News</a>
+                    </li>
+                    <li>
+                        <span class="tidslinje-ar">2025</span>
+                        <h3>Över 2 000 besökare</h3>
+                        <p>Målet nås, och alla husvagnsplatser är fullbokade.</p>
+                        <a class="tidslinje-kalla" href="https://www.siljannews.se/alvdalen/2000-besokare-hannahs-countrygala-fortsatter-att-vaxa/" rel="noopener">Siljan News</a>
+                    </li>
+                    <li>
+                        <span class="tidslinje-ar">2026</span>
+                        <h3>Nytt rekord</h3>
+                        <p>Drygt 2 600 besökare, River Valley Countrykör debuterar och campingen är full.</p>
+                        <a class="tidslinje-kalla" href="https://www.siljannews.se/alvdalen/publiksucce-for-river-valley-country-festival/" rel="noopener">Siljan News</a>
+                    </li>
+                    <li>
+                        <span class="tidslinje-ar">2027</span>
+                        <h3>Sjätte gången</h3>
+                        <p>1–3 juli på Boggberget. Biljetterna släpps 1 december kl. 12.00.</p>
+                        <a class="tidslinje-kalla" href="biljetter.html">Biljetter &amp; camping</a>
+                    </li>
+                </ol>
             </div>
         </section>
 
@@ -213,15 +271,53 @@
         </section>
 
         <section class="sektion" id="press" aria-labelledby="press-rubrik">
-            <div class="matt matt--smal">
-                <p class="overrubrik">Press</p>
-                <h2 id="press-rubrik">Skrivet om oss</h2>
-                <ul class="pressrader mt-2">
-                    <li><a href="https://radiosiljan.com/nyheter/hanna-startar-upp-helt-ny-countryfestival/" rel="noopener"><span>Radio Siljan · 2022</span><strong>Hanna startar upp helt ny countryfestival</strong></a></li>
-                    <li><a href="https://www.dalademokraten.se/2022-06-29/imorgon-smygstartar-den-nya-countryfestivalen-i-evertsberg" rel="noopener"><span>Dalademokraten · 2022</span><strong>I morgon smygstartar den nya countryfestivalen i Evertsberg</strong></a></li>
-                    <li><a href="https://dalabygden.se/2024/06/26/tre-dagar-med-noje-och-country-i-alvdalen/" rel="noopener"><span>Dalabygden · 2024</span><strong>Tre dagar med nöje och country i Älvdalen</strong></a></li>
-                </ul>
-                <p class="mt-2 dampad">Är du journalist? Mejla <a href="mailto:howdy@rivervalley.se?subject=Press%20River%20Valley%202027">howdy@rivervalley.se</a> så hjälper vi dig med bilder och intervjuer.</p>
+            <div class="matt">
+                <div class="sektion-topp">
+                    <p class="overrubrik">Press</p>
+                    <h2 id="press-rubrik">Skrivet om oss</h2>
+                    <p class="ingress">Ett urval av vad som skrivits om festivalen genom åren.</p>
+                </div>
+                <!-- RV-PRESS: lägg nya artiklar överst i rätt år. -->
+                <div class="pressar">
+                    <div class="pressar-ar">
+                        <h3>2026</h3>
+                        <ul class="pressrader">
+                            <li><a href="https://www.siljannews.se/alvdalen/publiksucce-for-river-valley-country-festival/" rel="noopener"><span>Siljan News · 29 juni 2026</span><strong>Publiksuccé för River Valley Country Festival</strong></a></li>
+                            <li><a href="https://www.moratidning.se/alvdalen/publikrekord-pa-festivalen-det-ar-klockrent/" rel="noopener"><span>Mora Tidning · 26 juni 2026</span><strong>Publikrekord på festivalen: ”Det är klockrent”</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="pressar-ar">
+                        <h3>2025</h3>
+                        <ul class="pressrader">
+                            <li><a href="https://www.siljannews.se/alvdalen/2000-besokare-hannahs-countrygala-fortsatter-att-vaxa/" rel="noopener"><span>Siljan News · 30 juni 2025</span><strong>2000 besökare – Hannahs countryfestival fortsätter att växa</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="pressar-ar">
+                        <h3>2024</h3>
+                        <ul class="pressrader">
+                            <li><a href="https://www.siljannews.se/alvdalen/succe-for-den-vaxande-musikfestivalen/" rel="noopener"><span>Siljan News · 30 juni 2024</span><strong>Succé för den växande musikfestivalen</strong></a></li>
+                            <li><a href="https://dalabygden.se/2024/06/26/tre-dagar-med-noje-och-country-i-alvdalen/" rel="noopener"><span>Dalabygden · 26 juni 2024</span><strong>Tre dagar med nöje och country i Älvdalen</strong></a></li>
+                            <li><a href="https://www.siljannews.se/alvdalen/dags-for-countryfestival/" rel="noopener"><span>Siljan News · 24 juni 2024</span><strong>Dags för countryfestival</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="pressar-ar">
+                        <h3>2023</h3>
+                        <ul class="pressrader">
+                            <li><a href="https://www.siljannews.se/alvdalen/river-valley-countryfestival-lockade-countryalskarna-till-boggberget/" rel="noopener"><span>Siljan News · 4 juli 2023</span><strong>River Valley Countryfestival lockade countryälskarna till Boggberget</strong></a></li>
+                            <li><a href="https://www.moratidning.se/kultur-noje/countryfestival-i-alvdalen-satsar-pa-publikrekord/" rel="noopener"><span>Mora Tidning · 30 juni 2023</span><strong>Countryfestival i Älvdalen satsar på publikrekord</strong></a></li>
+                            <li><a href="https://www.sverigesradio.se/artikel/nu-avslojas-nomineringarna-till-dma" rel="noopener"><span>Sveriges Radio · 2023</span><strong>Nu avslöjas nomineringarna till Dalecarlia Music Awards</strong></a></li>
+                            <li><a href="https://www.siljannews.se/alvdalen/hannahs-countryfestival-nominerad-och-vaxer/" rel="noopener"><span>Siljan News · 21 februari 2023</span><strong>Hannahs countryfestival nominerad och växer</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="pressar-ar">
+                        <h3>2022</h3>
+                        <ul class="pressrader">
+                            <li><a href="https://www.moratidning.se/alvdalen/imorgon-smygstartar-den-nya-countryfestivalen-i-evertsberg/" rel="noopener"><span>Mora Tidning · 29 juni 2022</span><strong>I morgon smygstartar den nya countryfestivalen i Evertsberg</strong></a></li>
+                            <li><a href="https://radiosiljan.com/nyheter/hanna-startar-upp-helt-ny-countryfestival/" rel="noopener"><span>Radio Siljan · 2022</span><strong>Hanna startar upp helt ny countryfestival</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mt-3 dampad">Är du journalist? Mejla <a href="mailto:howdy@rivervalley.se?subject=Press%20River%20Valley%202027">howdy@rivervalley.se</a> så hjälper vi dig med bilder och intervjuer.</p>
             </div>
         </section>
 
@@ -235,6 +331,10 @@
                     <img src="images/rv-logga-vit-600.webp" alt="River Valley Countryfestival" width="600" height="258" loading="lazy">
                     <p class="sidfot-datum">1–3 juli 2027</p>
                     <p>Boggbergets festplats, Evertsberg, Älvdalen</p>
+                    <ul class="sociala" aria-label="Följ oss">
+                        <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Festivalen</h2>
@@ -260,13 +360,13 @@
                         <li><a href="mailto:howdy@rivervalley.se">howdy@rivervalley.se</a></li>
                         <li><a href="tel:+46736493050">073-649 30 50</a></li>
                         <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/rivervalleycountryfestival" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidfot-botten">
                 <p>River Valley Countryfestival arrangeras av Vildbyn i Älvdalen, som också står bakom <a href="https://backwoodsfestival.se/" rel="noopener">Backwoods Festival</a>.</p>
-                <p>Foto: Tobbe Nilsson m.fl. Sajten sätter inga cookies. &copy; 2026 River Valley Countryfestival</p>
+                <p>&copy; 2026 River Valley Countryfestival. Foto: Tobbe Nilsson. Sajten sätter inga cookies.</p>
             </div>
         </div>
     </footer>

@@ -7,6 +7,12 @@
     <!-- RV-UTKAST: ta bort raden nedan när sajten ersätter Wix-sajten på rivervalley.se -->
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#111111">
+    <!-- RV-GSC: Google Search Console. Verifiera helst med en DNS-post (TXT) hos
+         domänleverantören, se README. Väljer ni HTML-taggen i stället: klistra in
+         koden från Search Console här, ta bort kommentarstecknen och kör
+         python3 _build/sync.py.
+    <meta name="google-site-verification" content="KOD-FRAN-SEARCH-CONSOLE">
+    -->
     <link rel="preload" href="fonts/oswald-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/bitter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.css">
@@ -49,6 +55,10 @@
                     <li><a href="kontakt.html" data-sida="kontakt.html">Kontakt</a></li>
                     <li class="meny-biljetter"><a href="biljetter.html" data-sida="biljetter.html">Biljetter</a></li>
                 </ul>
+                <ul class="sociala meny-sociala" aria-label="Följ oss">
+                    <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                    <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -84,7 +94,7 @@
                 <div class="sektion-topp">
                     <p class="overrubrik">19 bilder</p>
                     <h2 id="rubrik-2026">River Valley 2026</h2>
-                    <p class="ingress">Femte upplagan, 25–27 juni 2026. Kör, rodéo, marknadsgata och kvällssol över Boggberget.</p>
+                    <p class="ingress">Femte upplagan, 25–27 juni 2026, och nytt publikrekord med drygt 2 600 besökare. Kör, rodéo, marknadsgata och kvällssol över Boggberget.</p>
                 </div>
                 <div class="murverk">
                     <a href="images/foto/rv-2026-marknadsgatan-1600.webp" data-forstora>
@@ -210,7 +220,7 @@
                 <div class="sektion-topp">
                     <p class="overrubrik">48 bilder</p>
                     <h2 id="rubrik-2024">River Valley 2024</h2>
-                    <p class="ingress">Tredje upplagan, med bland andra Maja Francis, Doug Seegers och The Swedish Cowboy på scen. Foto: Tobbe Nilsson.</p>
+                    <p class="ingress">Tredje upplagan och första publikrekordet, med bland andra Maja Francis, Doug Seegers och The Swedish Cowboy på scen.</p>
                 </div>
                 <div class="murverk">
                     <a href="images/foto/rv-2024-vagskylt-1600.webp" data-forstora>
@@ -427,7 +437,7 @@
                         <img src="images/foto/rv-2024-band-skogsbild-800.webp" srcset="images/foto/rv-2024-band-skogsbild-800.webp 800w, images/foto/rv-2024-band-skogsbild-1600.webp 1600w"
                              sizes="(min-width: 900px) 33vw, 50vw"
                              width="800" height="533" loading="lazy" decoding="async"
-                             alt="Band på scenen framför en skogsbild, publik i hattar framför">
+                             alt="Otis Kerp på scenen 2024, publik i hattar framför">
                     </a>
                     <a href="images/foto/rv-2024-fiol-1600.webp" data-forstora>
                         <img src="images/foto/rv-2024-fiol-800.webp" srcset="images/foto/rv-2024-fiol-800.webp 800w, images/foto/rv-2024-fiol-1600.webp 1600w"
@@ -526,6 +536,10 @@
                     <img src="images/rv-logga-vit-600.webp" alt="River Valley Countryfestival" width="600" height="258" loading="lazy">
                     <p class="sidfot-datum">1–3 juli 2027</p>
                     <p>Boggbergets festplats, Evertsberg, Älvdalen</p>
+                    <ul class="sociala" aria-label="Följ oss">
+                        <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook ↗</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Festivalen</h2>
@@ -551,13 +565,13 @@
                         <li><a href="mailto:howdy@rivervalley.se">howdy@rivervalley.se</a></li>
                         <li><a href="tel:+46736493050">073-649 30 50</a></li>
                         <li><a href="https://www.instagram.com/rivervalley_countryfestival/" rel="noopener">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/rivervalleycountryfestival" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/rivervalleycountryfestival/" rel="noopener">Facebook</a></li>
                     </ul>
                 </div>
             </div>
             <div class="sidfot-botten">
                 <p>River Valley Countryfestival arrangeras av Vildbyn i Älvdalen, som också står bakom <a href="https://backwoodsfestival.se/" rel="noopener">Backwoods Festival</a>.</p>
-                <p>Foto: Tobbe Nilsson m.fl. Sajten sätter inga cookies. &copy; 2026 River Valley Countryfestival</p>
+                <p>&copy; 2026 River Valley Countryfestival. Foto: Tobbe Nilsson. Sajten sätter inga cookies.</p>
             </div>
         </div>
     </footer>

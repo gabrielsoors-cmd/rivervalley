@@ -3,7 +3,9 @@
    1. Mobilmenyn
    2. Nedräkningen (biljettsläpp → festivalstart)
    3. Förstora bilder (galleriet)
-   Sajten sätter inga cookies och har ingen spårning.
+   4. Kartan (laddas först vid klick)
+   Sajten sätter inga cookies och har ingen spårning. Google-kartan laddas
+   bara om besökaren själv klickar på den.
    ========================================================================== */
 
 (function () {
@@ -14,8 +16,10 @@
        stänger. Skriv tiden med svensk tidszon på slutet: +01:00 på vintern,
        +02:00 på sommaren. */
     var BILJETTSLAPP = '2026-12-01T12:00:00+01:00';    // RV-SLAPP
-    var FESTIVAL_START = '2027-07-01T18:00:00+02:00';  // RV-DATUM: torsdag kl. 18
-    var FESTIVAL_SLUT = '2027-07-04T01:00:00+02:00';   // RV-DATUM: natten mot söndag
+    // Öppettiderna är inte klara. Tills vidare räknar den till midnatt 1 juli.
+    // Byt till rätt klockslag när tiderna släpps (t.ex. T18:00:00+02:00).
+    var FESTIVAL_START = '2027-07-01T00:00:00+02:00';  // RV-DATUM: torsdag
+    var FESTIVAL_SLUT = '2027-07-04T03:00:00+02:00';   // RV-DATUM: natten mot söndag
 
     /* ---------- 1. Mobilmenyn ---------- */
     var menyKnapp = document.querySelector('.meny-knapp');
@@ -189,4 +193,18 @@
             startX = null;
         });
     }
+
+    /* ---------- 4. Kartan ---------- */
+    document.querySelectorAll('[data-karta]').forEach(function (knapp) {
+        knapp.addEventListener('click', function () {
+            var behallare = knapp.closest('.karta');
+            var iframe = document.createElement('iframe');
+            iframe.src = knapp.getAttribute('data-karta');
+            iframe.title = 'Karta över Boggbergets festplats i Evertsberg, Älvdalen';
+            iframe.loading = 'lazy';
+            iframe.referrerPolicy = 'no-referrer-when-downgrade';
+            behallare.innerHTML = '';
+            behallare.appendChild(iframe);
+        });
+    });
 })();
